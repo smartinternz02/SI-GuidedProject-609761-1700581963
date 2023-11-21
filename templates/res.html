@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>A SMARTBRIDGE PRODUCT</title>
+
+  <!-- slider stylesheet -->
+  <style>
+      .h1 {
+        text-align: center;
+        color:rgb(139, 0, 0)
+      }
+      
+      
+      .alert {
+        margin-top: 20px;
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 45px;
+      }
+
+      .img-fluid {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .btn {
+        display: block;
+        margin: 0 auto;
+      }
+      .btn-primary-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+  
+      .btn-primary {
+        display: block;
+      }
+    
+  </style>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page about_page">
+   <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="static/images/logo.png" alt="" />
+            <span>
+              AI BASED WEATHER CLASSIFICATION
+            </span>
+          </a>
+          <div class="contact_nav" id="">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                  <span>&emsp;&emsp;&emsp;</span>
+                  <img src="static/images/call.png" alt="" />
+                  <span>&emsp;Call : + 01 1234567890</span>
+              </li>
+              <li class="nav-item">
+                  <img src="static/images/envelope.png" alt="" />
+                  <span>&emsp;demo@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex  flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pictures.html">Images </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="upload.html">Predict<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="slider_container">
+              <div class="container">
+                <div class="heading_container">
+                  <h2 style="color:black;">
+                     RESULT
+                  </h2>
+                </div>
+                <div style="text-align: center;">
+                <h3>{{ result }}</h3>
+                </div>
+                <img src="{{ image_url }}" class="img-fluid">
+                <div class = "btn-primary-container">
+                <a href="{{ url_for('up') }}" class="btn btn-primary">Upload another image</a>
+                </div>
+              </div>
+      </div>
+    <!-- end slider section -->
+   </section>
+
+   <!-- info section -->
+
+   <section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+          Our Newsletter
+        </h4>
+        <form action="">
+          <input type="text" placeholder="Enter your email">
+          <div class="d-flex justify-content-end">
+            <button>
+              subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h6>
+            About this Web Application
+          </h6>
+          <p>
+            This web Application alows the users to know about the weather conditions in multiple places simultaneously,
+            if the CCTV footages of multiple places are set up in such a way that they continuously upload the images to this website then the weather of multiple places can be updated.
+          </p>
+        </div>
+        <div class="col-md-3 offset-md-2">
+          <h6>
+            Menus
+          </h6>
+          <ul>
+            <li class=" active">
+              <a class="" href="index.html">Home </a>
+            </li>
+            <li class="">
+              <a class="" href="about.html">About </a>
+            </li>
+            <li class="">
+              <a class="" href="pictures.html">Images </a>
+            </li>
+            <li class="">
+              <a class="" href="upload.html">Predict<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+    window.onload = function() {
+      var fileInput = document.querySelector('input[type=file]');
+      var fileNameSpan = document.querySelector('#filename');
+    
+      fileInput.addEventListener('change', function() {
+        fileNameSpan.textContent = fileInput.files[0].name;
+      });
+    };
+  </script>
+</body>
+
+</html>
